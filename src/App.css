@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+*, ::after, ::before{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.body{
+  background-color: rgb(25, 25, 25);
+  width: 100%;
+  height: 100vh;
+  color: #f1f1f1;
+  font-family: sans-serif;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
 }
-
-.App-link {
-  color: #61dafb;
+h1{
+  text-align: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttonPlayer{
+  width: 400px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.buttonPlayer button{
+  background-color:rgb(25, 25, 25);
+  width: 120px;
+  height: 120px;
+  border: 3px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.buttonPlayer button img{
+  width: 45%;
+}
+.Result{
+  font-size: 22px;
+  font-weight: bold;
+}
+.scoreGame{
+  padding: 10px;
+}
+.resetAutoPlay{
+  width: 215px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.resetAutoPlay button{
+  width: 100px;
+  height: 35px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.PlayerComputerGame{
+  width: 400px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.PlayerComputerGame img{
+  max-width: 50px;
+  max-height: 50px;
+}
+button{
+  cursor: pointer;
 }
