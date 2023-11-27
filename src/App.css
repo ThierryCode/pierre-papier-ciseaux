@@ -76,3 +76,7 @@ h1{
 button{
   cursor: pointer;
 }
+.buttonPlay.active{
+  background-color: #f1f1f1;
+  border: 3px solid rgb(221, 11, 11);
+}
